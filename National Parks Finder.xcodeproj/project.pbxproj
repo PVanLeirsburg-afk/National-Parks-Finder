@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		93AB90312FF4699800EDB4FF /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB90302FF4699800EDB4FF /* Park.swift */; };
+		93AB904B2FF47EDD00EDB4FF /* ParkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB904A2FF47EDD00EDB4FF /* ParkService.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		93AB90202FF468C400EDB4FF /* National Parks Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "National Parks Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93AB90302FF4699800EDB4FF /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		93AB904A2FF47EDD00EDB4FF /* ParkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +39,8 @@
 		93AB90172FF468C400EDB4FF = {
 			isa = PBXGroup;
 			children = (
+				93AB90302FF4699800EDB4FF /* Park.swift */,
+				93AB904A2FF47EDD00EDB4FF /* ParkService.swift */,
 				93AB90222FF468C400EDB4FF /* National Parks Finder */,
 				93AB90212FF468C400EDB4FF /* Products */,
 			);
@@ -119,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93AB904B2FF47EDD00EDB4FF /* ParkService.swift in Sources */,
+				93AB90312FF4699800EDB4FF /* Park.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

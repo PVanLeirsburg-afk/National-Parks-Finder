@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+struct ParkResponse: Codable {
+    let data: [Park]
+}
+
+struct Park: Codable, Identifiable {
+    let id: String
+    let fullName: String
+    let latitude: String
+    let longitude: String
+}

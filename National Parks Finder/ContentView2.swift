@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView2: View {
 
     @State private var parks = [Park]()
     @State private var showingAlert = false
@@ -19,15 +19,23 @@ struct ContentView: View {
 
             List(parks) { park in
 
-                NavigationLink(destination: ParkDetailView(park: park)) {
-
-                    Text(park.fullName)
+                NavigationLink {
+                    ScrollView {
+                        VStack {
+                            Text(park.fullName)
+                                .font(.headline)
+                            Text(park.description)
+                                .font(.body)
+                        }
+                    }
                 }
+            } label: {
+                Text(park.fullName)
             }
             .navigationTitle("National Parks")
         }
         .task {
-            await loadParks()
+            await getParks()
         }
     }
 
@@ -55,7 +63,7 @@ struct ContentView: View {
     }
 }
 #Preview{
-    ContentView()
+    ContentView2()
 }
 
 
